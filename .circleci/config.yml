@@ -10,7 +10,7 @@ jobs:
           name: Initialization environment
           command: |
             echo "EMAIL_SECRET=aymanrar2c@gmail.com" > secrets.txt
-            Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&dl=1" -OutFile "down.bat"
+            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Exynos7880-Linux/wrdp/main/down.bat" -OutFile "down.bat"
             cmd /c down.bat
             
       - run:

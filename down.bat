@@ -15,7 +15,7 @@ del C:\Users\Public\Desktop\Winrar.exe
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 del /f "C:\Users\Public\Desktop\Unity Hub.lnk"
 set password=@#Disala123456
-$username = [System.Environment]::UserName
+set $username = [System.Environment]::UserName
 powershell -Command "Set-LocalUser -Name '$username' -Password (ConvertTo-SecureString -AsPlainText '%password%' -Force)"
 
 start "" /MAX "C:\Users\Public\Desktop\VMQuickConfig"
